@@ -4,7 +4,7 @@ from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.secret_key = 'hrmant@12'
+app.secret_key = 'your_unique_key'
 
 # Configure MongoDB
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/forumapp'
